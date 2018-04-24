@@ -5,6 +5,6 @@ class ProductsController < ApplicationController
   def add
     item = params[:product]
     cart << item
-    redirect :index
+    redirect_to :index
   end
 end
