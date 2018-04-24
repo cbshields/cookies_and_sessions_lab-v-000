@@ -3,9 +3,9 @@ class ProductsController < ApplicationController
   end
 
   def add
-
+    binding.pry
     cart << params["product"]
-    raise cart.inspect
+    binding.pry
     render :index
   end
 end
