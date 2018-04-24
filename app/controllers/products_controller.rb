@@ -5,5 +5,6 @@ class ProductsController < ApplicationController
   def add
     item = params[:product]
     cart << item
+    render :index
   end
 end
