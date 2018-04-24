@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   def add
     raise params.inspect
     cart << params["product"]
-    binding.pry
+    raise cart.inspect
     render :index
   end
 end
